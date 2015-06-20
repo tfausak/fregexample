@@ -5,8 +5,9 @@ import fregexample.Main ()
 import Test.QuickCheck
 
 main :: IO ()
-main = do
-    quickCheck $ once $ Main.collatz 0 == 0
-    quickCheck $ once $ Main.collatz 1 == 1
-    quickCheck $ once $ Main.collatz 2 == 1
-    quickCheck $ once $ Main.collatz 3 == 10
+main = mapM_ (quickCheck . once)
+    [ Main.collatz 0 == 0
+    , Main.collatz 1 == 1
+    , Main.collatz 2 == 1
+    , Main.collatz 3 == 10
+    ]
