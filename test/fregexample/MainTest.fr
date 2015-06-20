@@ -2,19 +2,11 @@ module fregexample.MainTest where
 
 import fregexample.Main ()
 
+import Test.QuickCheck
+
 main :: IO ()
 main = do
-    assertEquals (Main.collatz 0) 0
-    assertEquals (Main.collatz 1) 1
-    assertEquals (Main.collatz 2) 1
-    assertEquals (Main.collatz 3) 10
-
-assertEquals :: (Eq a, Show a) => a -> a -> IO ()
-assertEquals x y = if x == y
-    then println ("\u001b[32m\u2713 Passed\u001b[0m")
-    else do
-        print "\u001b[31m\u2717 Failed\u001b[0m (expected "
-        print y
-        print " but got "
-        print x
-        println ")"
+    quickCheck $ once $ Main.collatz 0 == 0
+    quickCheck $ once $ Main.collatz 1 == 1
+    quickCheck $ once $ Main.collatz 2 == 1
+    quickCheck $ once $ Main.collatz 3 == 10
