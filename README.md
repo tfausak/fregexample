@@ -23,7 +23,7 @@ $ lein repl
 ```
 
 It would be nice to have a [Frege REPL][], but I don't know how to make that
-happen.
+happen. I opened [an issue][] for adding the Frege REPL to Leiningen.
 
 There is a test suite. Like the REPL, it is also in Clojure. You can run it
 with:
@@ -41,5 +41,6 @@ This project borrows liberally from [frege-lein-template][].
 [frege]: https://github.com/Frege/frege
 [leiningen]: http://leiningen.org
 [frege repl]: https://github.com/Frege/frege-repl
+[an issue]: https://github.com/Frege/frege-lein-plugin/issues/3
 [frunit]: https://github.com/melrief/FrUnit
 [frege-lein-template]: https://github.com/Frege/frege-lein-template
