@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [com.theoryinpractise.frege/frege "3.22.367-g2737683"]]
   :plugins [[lein-fregec "3.22.367-i"]]
+  :prep-tasks ["fregec"]
   :source-paths ["source/clojure"]
   :frege-source-paths ["source/frege"]
   :test-paths ["test/clojure"]
