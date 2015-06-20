@@ -1,9 +1,9 @@
 # [Fregexample][]
 
-An example [Frege][] project.
+An example [Frege][] ("free-guh") project.
 
-The easiest way to get started is with [Leiningen][]. Once you have it
-installed, you can run this project with:
+The easiest way to get started is with [Leiningen][] ("line-ing-en"). Once you
+have it installed, you can run this project with:
 
 ``` sh
 $ lein run
