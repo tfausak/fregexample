@@ -1,0 +1,4 @@
+module Fregexample where
+
+main :: [String] -> IO ()
+main args = println args

@@ -2,7 +2,7 @@
 
 Fregexample uses [Semantic Versioning][].
 
-## v0.0.0 (2015-0619)
+## v0.0.0 (2015-06-19)
 
 -   Initially created.
 

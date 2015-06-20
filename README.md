@@ -6,14 +6,14 @@ The easiest way to get started is with [Leiningen][]. Once you have it
 installed, you can run this project with:
 
 ``` sh
-$ lein fregec :run Fregexample
+$ lein do fregec, run
 ```
 
 You can also create a redistributable uberjar with:
 
 ``` sh
 $ lein uberjar
-$ java -cp target/fregexample-0.0.1-SNAPSHOT-standalone.jar Fregexample
+$ java -jar target/fregexample-0.0.0-SNAPSHOT-standalone.jar
 ```
 
 [fregexample]: https://github.com/tfausak/fregexample

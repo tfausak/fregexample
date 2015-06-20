@@ -1,4 +1,0 @@
-module Fregexample where
-
-main :: IO ()
-main = println "Hello, world!"
