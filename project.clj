@@ -8,9 +8,10 @@
   :plugins [[lein-fregec "3.22.367-i"]]
   :prep-tasks ["fregec"]
   :frege-source-paths ["source"]
-  :test-paths ["test/clojure"]
   :main fregexample.Main
-  :profiles {:uberjar {:aot :all
+  :profiles {:test {:frege-source-paths ["test"]
+                    :main fregexample.MainTest}
+             :uberjar {:aot :all
                        :prep-tasks ["fregec" "compile"]}}
   :repl-options {:prompt (fn [_] ">>> ")
                  :welcome ()})

@@ -25,15 +25,14 @@ $ lein repl
 It would be nice to have a [Frege REPL][], but I don't know how to make that
 happen. I opened [an issue][] for adding the Frege REPL to Leiningen.
 
-There is a test suite. Like the REPL, it is also in Clojure. You can run it
-with:
+There is a rudimentary test suite. You can run it with:
 
 ``` sh
-$ lein test
+$ lein with-profile test run
 ```
 
-It would be nice to use something like [FrUnit][] to run the tests in Frege,
-but I don't know how to do that either.
+It would be nice to use [FrUnit][], but I haven't figured out how to do that
+yet.
 
 This project borrows liberally from [frege-lein-template][].
 
