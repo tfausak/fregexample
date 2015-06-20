@@ -1,8 +1,5 @@
 module Fregexample where
 
-main :: [String] -> IO ()
-main args = println args
-
 {--
     Compute the next term in the Collatz sequence for the given number.
 

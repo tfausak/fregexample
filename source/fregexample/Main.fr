@@ -1,0 +1,4 @@
+module fregexample.Main where
+
+main :: [String] -> IO ()
+main args = println args

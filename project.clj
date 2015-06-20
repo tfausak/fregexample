@@ -7,10 +7,9 @@
                  [com.theoryinpractise.frege/frege "3.22.367-g2737683"]]
   :plugins [[lein-fregec "3.22.367-i"]]
   :prep-tasks ["fregec"]
-  :source-paths ["source/clojure"]
-  :frege-source-paths ["source/frege"]
+  :frege-source-paths ["source"]
   :test-paths ["test/clojure"]
-  :main fregexample.core
+  :main fregexample.Main
   :profiles {:uberjar {:aot :all
                        :prep-tasks ["fregec" "compile"]}}
   :repl-options {:prompt (fn [_] ">>> ")
