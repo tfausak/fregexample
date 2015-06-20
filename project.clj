@@ -11,4 +11,6 @@
   :test-paths ["test/clojure"]
   :main fregexample.core
   :profiles {:uberjar {:aot :all
-                       :prep-tasks ["fregec" "compile"]}})
+                       :prep-tasks ["fregec" "compile"]}}
+  :repl-options {:prompt (fn [_] ">>> ")
+                 :welcome ()})
