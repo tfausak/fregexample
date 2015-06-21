@@ -4,8 +4,8 @@
   :license {:name "The MIT License"
             :url "http://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [com.theoryinpractise.frege/frege "3.22.367-g2737683"]]
-  :plugins [[lein-fregec "3.22.367-i"]]
+                 [org.frege-lang/frege "3.22.524-gcc99d7e"]]
+  :plugins [[lein-fregec "3.22.524"]]
   :prep-tasks ["fregec"]
   :frege-source-paths ["source"]
   :main fregexample.Main
